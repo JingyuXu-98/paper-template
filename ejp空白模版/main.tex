@@ -1,0 +1,100 @@
+\documentclass{imsart}
+
+%% Packages
+\RequirePackage{amsthm,amsmath,amsfonts,amssymb}
+\RequirePackage[numbers,sort&compress]{natbib}
+%\RequirePackage[authoryear]{natbib}%% uncomment this for author-year citations
+\RequirePackage[colorlinks,citecolor=blue,urlcolor=blue]{hyperref}
+\RequirePackage{graphicx}
+
+\usepackage{color}
+
+\startlocaldefs
+
+\theoremstyle{plain}
+\newtheorem{axiom}{Axiom}
+\newtheorem{claim}[axiom]{Claim}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+
+\theoremstyle{remark}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{example}{Example}
+\newtheorem*{fact}{Fact}
+\newtheorem{prop}{Proposition}
+
+\endlocaldefs
+
+
+
+
+
+
+
+
+\begin{document}
+\pagestyle{plain}
+\begin{frontmatter}
+\title{New paper}
+
+
+% \begin{aug}
+
+% \author[A]{\fnms{Jingyu}~\snm{XU}\ead[label=e1]{12131253@mail.sustech.edu.cn}},
+% % \author[B]{\fnms{Second}~\snm{Author}\ead[label=e2]{second@somewhere.com}\orcid{0000-0000-0000-0000}}
+% % \and
+% % \author[B]{\fnms{Third}~\snm{Author}\ead[label=e3]{third@somewhere.com}}
+
+% \address[A]{Department of Statistics and Data Science,
+% SUSTECH\printead[presep={,\ }]{e1}}
+
+% % \address[B]{Department,
+% % University or Company Name\printead[presep={,\ }]{e2,e3}}
+% \end{aug}
+
+\begin{abstract}
+This is the abstract.
+\end{abstract}
+
+% \begin{keyword}[class=MSC]
+% \kwd[Primary ]{00X00}
+% \kwd{00X00}
+% \kwd[; secondary ]{00X00}
+% \end{keyword}
+
+\begin{keyword}
+\kwd{Moderate Deviation}
+\kwd{New paper}
+\end{keyword}
+
+\end{frontmatter}
+
+
+
+\section{Introduction}
+This is an introduction.
+
+
+\section{Main results}
+\subsection{New paper}
+
+
+\section*{Conclusion}
+\begin{prop}
+This is a proposition.
+\end{prop}
+
+
+
+
+\begin{acks}[Acknowledgments]
+This is an acknowledgement.
+\end{acks}
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{reference}
+
+\end{document}
